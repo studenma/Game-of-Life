@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Martin Studeny, xstude23-->
+<project outputprefix="kblcd">
+    <!--  Project description -->
+    <name>IMP-Life</name>
+    <author>Martin Studeny</author>
+    <authoremail>xstude23@stud.fit.vutbr.cz</authoremail>
+    <revision>20171231</revision>
+    <description>Hra LIFE. Napsana pro MCU. VHDL jsem pouzil od Ing. Vasicka.</description>
+
+    <!--  MCU part -->
+    <mcu>
+        <include>mcu/libs/keyboard/package.xml</include>
+        <include>mcu/libs/lcd/package.xml</include>
+        <file>main.c</file>
+    </mcu>
+
+    <!-- FPGA part -->
+    <fpga>
+        <include>fpga/ctrls/keyboard/package.xml</include>
+        <include>fpga/ctrls/lcd/package.xml</include>
+        <file>top_level.vhd</file>
+    </fpga>
+
+</project>
